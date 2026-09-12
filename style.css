@@ -1,0 +1,442 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: rgb(15, 15, 14);
+    font-size: large;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav h2 {
+    color: rgb(247, 247, 248);
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero {
+    height: 100vh;
+    background-color: rgb(57, 56, 56);
+    position: relative;
+    display: flex;
+    padding-top: 65px;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    color: rgb(1, 1, 1);
+    font-size: 80px;
+    border: 2px solid black;
+    padding: 30px;
+    position: absolute;
+    left: 10%;
+    top: 120px;
+}
+
+.hero h1 span.liberta,
+.hero h1 span.rispetto {
+    color: #ff6500;
+}
+
+.fotohero {
+    position: absolute;
+    right: 10%;
+    top: 140px;
+}
+
+.fotohero img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero button {
+    background-color: orange;
+    color: rgb(25, 25, 25);
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 520px;
+    font-size: medium;
+    width: 130px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 7px; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+.sezchiara {
+    height: 100vh;
+    background-color: rgb(130, 127, 127);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+.sezscura{
+    height: 100vh;
+    background-color: rgb(57, 56, 56);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.foto-introduzione {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.foto-introduzione img {
+    width: 260px;
+    height: 170px;
+    object-fit: cover;
+    border: 3px solid #ff6500;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-1 {
+    margin-left: 50px;
+}
+
+.img-2 {
+    margin-left: 200px;
+}
+
+.img-3 {
+    margin-left: 50px;
+}
+
+.foto-sezdue {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-right: 50px;
+}
+
+.foto-sezdue img {
+    width: 380px;
+    height: 230px;
+    object-fit: cover;
+    border: 3px solid #ff6500;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Introduzione {
+    max-width: 500px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Introduzione span {
+    color: #ff6500;
+    font-weight: bold;
+}
+
+.Introduzione p.Titolo {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Introduzione p.Titolo span.conosciuto {
+    font-size: 48px;
+}
+
+.Introduzione p:not(.Titolo) {
+    color: black;
+    text-align: center;
+    border: 3px solid #ff6500;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: antiquewhite;
+    word-spacing: 4px;
+    line-height: 1.8;
+    margin: 0;
+    font-size: 18px;
+}
+.sezduetesto{
+    color: black;
+    word-spacing: 4px;
+    line-height: 1.8;    
+    padding: 20px;
+    width: 500px;
+    font-size: 18px;
+    margin-left: 60px;
+}
+.sezduetesto p.titolodue{
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+.sezduetesto p:not(.titolodue){
+    border: 3px solid #ff6500;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.sezduetesto p.titolodue span.spanresponsabilita{
+    color: #ff6500;
+}
+
+.seztre {
+    height: 100vh;
+    background-color: rgb(130, 127, 127);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.seztretesto {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seztretesto p.titolotre {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.seztretesto p.titolotre span.spantre {
+    color: #ff6500;
+}
+
+.seztretesto p:not(.titolotre) {
+    color: black;
+    text-align: center;
+    border: 3px solid #ff6500;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: antiquewhite;
+    word-spacing: 4px;
+    line-height: 1.8;
+    margin: 0;
+    font-size: 18px;
+    width: 800px;
+}
+
+.sezquattro {
+    height: 100vh;
+    background-color: rgb(57, 56, 56);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.foto-sezquattro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.foto-sezquattro img {
+    width: 260px;
+    height: 170px;
+    object-fit: cover;
+    border: 3px solid #ff6500;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sezquattrotesto {
+    max-width: 500px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sezquattrotesto p.titoloquattro {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sezquattrotesto p.titoloquattro span.spanquattro {
+    color: #ff6500;
+}
+
+.sezquattrotesto p:not(.titoloquattro) {
+    color: black;
+    text-align: center;
+    border: 3px solid #ff6500;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: antiquewhite;
+    word-spacing: 4px;
+    line-height: 1.8;
+    margin: 0;
+    font-size: 18px;
+}
+
+.btn-agrienduro {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ff6500;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-agrienduro:hover {
+    background-color: #ff6500;
+    color: #ffffff;
+}
+
+.sezcinque {
+    height: 100vh;
+    background-color: rgb(130, 127, 127);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.foto-sezcinque {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-right: 50px;
+}
+
+.foto-sezcinque img {
+    width: 380px;
+    height: 230px;
+    object-fit: cover;
+    border: 3px solid #ff6500;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sezcinquetesto {
+    color: black;
+    word-spacing: 4px;
+    line-height: 1.8;    
+    padding: 20px;
+    width: 700px;
+    font-size: 18px;
+    margin-left: 60px;
+}
+
+.sezcinquetesto p.titolocinque {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+.sezcinquetesto p:not(.titolocinque) {
+    border: 3px solid #ff6500;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.sezcinquetesto p.titolocinque span.spancinque {
+    color: #ff6500;
+}
+
+.footer-video-section {
+    background-color: #111;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid #ff6500;
+}
+
+.footer-video-container {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.footer-video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+#progressBar {
+    position: fixed;
+    top: 65px; 
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #ff6500;
+    z-index: 2000;
+    transition: width 0.1s ease-out;
+}
